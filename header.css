@@ -9,8 +9,7 @@ body {
     rgb(12, 20, 69) -16.9%,
     rgb(71, 30, 84) 119.9%
   );
-  height: 100%;
-  back
+  height: 110vh;
 }
 header {
   display: flex;
