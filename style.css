@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin: 35px 30px;
+}
+
+.tytuł {
+  display: flex;
+  color: aliceblue;
+  font-size: 90px;
+}
+
+.napis {
+  display: flex;
+  font-size: 30px;
+  margin-left: 30px;
+  align-self: flex-start;
+  box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.5);
+  opacity: 0; /* Ukrycie */
+  transform: translateY(30px); /* Przesunięcie w dół */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Animacja */
+}
+
+.napis.scrolled {
+  opacity: 1; /* Widoczny */
+  transform: translateY(0); /* Na miejscu */
+  align-self: center; /* Wyrównanie do środka */
+}
+
+.napis:hover {
+  color: orangered;
+}
+
+strong {
+  color: orangered;
+  font-size: 300px;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
+}
+.ropuch {
+  display: flex;
+  flex-direction: column;
+  scale: 90%;
+  box-shadow: 0px 110px 100000px 110px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    179.4deg,
+    rgb(12, 20, 69) -16.9%,
+    rgb(71, 30, 84) 119.9%
+  );
+  border-radius: 300px;
+}
+.Łosiopuch {
+  display: flex;
+  /* background-color: aliceblue; */
+  color: orangered;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-family: "Mystery Quest", sans-serif;
+  font-weight: bolder;
+  z-index: 1;
+}
+p {
+  font-size: 30px;
+  margin-left: 40px;
+  flex-direction: column;
+}
+footer {
+  width: 100%;
+  background-color: #101010;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.inner_footer {
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #101010;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer_left {
+  font-size: 10px;
+  font-family: "Doto", sans-serif;
+}
+
+.footer_right .social_links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_right .social_links li {
+  margin: 0 10px;
+}
+
+.footer_right .social_links a {
+  color: white;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Doto", sans-serif;
+}
+
+.footer_right .social_links a:hover {
+  color: orangered;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+  .inner_footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer_right {
+    margin-top: 10px;
+  }
+}
